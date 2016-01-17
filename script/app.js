@@ -37,7 +37,7 @@ app.controller('histController', function($scope) {
         $scope.message = 'Pagina para ver el historico!';
     });
 
-app.directive('bsActiveLink', ['$location', function ($location) {
+/*app.directive('bsActiveLink', ['$location', function ($location) {
 return {
     restrict: 'A', //use as attribute 
     replace: false,
@@ -59,7 +59,7 @@ return {
         });
     }
 }
-}]);
+}]);*/
 
 
 app.controller('myNavMenuController',  function($scope, $location) {

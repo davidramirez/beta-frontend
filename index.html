@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <div class="container-fluid" ng-controller="mainController" ui-view>
+    <div class="container-fluid" ng-controller="mainController" >
         <div class="page-header">
             <h1>BetaCoding &Beta;</h1>      
         </div>
@@ -38,7 +38,7 @@
             <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
                 <ul class="nav navbar-nav pull-right">    
                     <li><a >Bienvenido Usuario</a></li>
-                        <li><a href="#"><i class="fa fa-user"></i> Mi perfil</a></li>
+                        <li><a ui-sref="home"><i class="fa fa-user" ></i> Mi perfil</a></li>
                         <li><a href="#"><i class="fa fa-cog fa-spin"></i> Configuracion</a></li>
                         <li><a href="#"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
                 </ul>                    
@@ -52,10 +52,7 @@
     <!-- Menu lateral -->
         <div class="col-lg-4 col-sm-12 " id="leftnavmenu" >
             <ul class="list-group" bs-active-link >
-   <!--           <a class="list-group-item" ui-sref="add" <!--href="#/add"-- > <h4 class="list-group-item-heading"><i class="fa fa-plus"></i> Añadir</h4> <p class="list-group-item-text">Crea tu nuevo valoración</p></a>
-                <a class="list-group-item" ui-sref="last" <!-- href="#/last" -- > <h4 class="list-group-item-heading"><i class="fa fa-search"></i> Ver Último</h4> <p class="list-group-item-text">Visualiza tu ultima valoración</p></a>
-              <a class="list-group-item" ui-sref="hist" <!--href="#/hist" -- > <h4 class="list-group-item-heading"><i class="fa fa-search-plus"></i> Historico</h4> <p class="list-group-item-text">Visualiza el histórico con todas tus valoraciones</p></a>
--->
+ 
                     <a class="list-group-item" ui-sref="add"> <h4 class="list-group-item-heading"><i class="fa fa-plus"></i> Añadir</h4> <p class="list-group-item-text">Crea tu nuevo valoración</p></a>
                 <a class="list-group-item" ui-sref="last" > <h4 class="list-group-item-heading"><i class="fa fa-search"></i> Ver Último</h4> <p class="list-group-item-text">Visualiza tu ultima valoración</p></a>
               <a class="list-group-item" ui-sref="hist" > <h4 class="list-group-item-heading"><i class="fa fa-search-plus"></i> Historico</h4> <p class="list-group-item-text">Visualiza el histórico con todas tus valoraciones</p></a>
@@ -67,9 +64,9 @@
         <div class="col-lg-8 col-sm-12" id="main">
         <div  ui-view></div>
         
-        </div> <!--ng-view-- >
-            
         </div>
+            
+    </div>
 </body>
     
     <!-- JS -->

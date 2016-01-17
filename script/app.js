@@ -13,6 +13,12 @@ app.controller('mainController', function ($scope) {
     };
 });
 
+app.controller('homeController', function($scope) {
+
+        // create a message to display in our view
+        $scope.message = 'Usuario!';
+    });
+
  app.controller('addController', function($scope) {
 
         // create a message to display in our view
@@ -61,54 +67,42 @@ app.controller('myNavMenuController',  function($scope, $location) {
    
 });
 
-/*
-app.config(function($routeProvider) {
-        $routeProvider
 
-            // route for the home page
-            .when('/add', {
-                templateUrl : 'pages/add.html',
-                controller  : 'addController'
-            })
-
-            // route for the about page
-            .when('/last', {
-                templateUrl : 'pages/last.html',
-                controller  : 'lastController'
-            })
-        
-            .when('/hist', {
-                templateUrl : 'pages/hist.html',
-                controller  : 'histController'
-            });
-    });
-
-*/
 app.config(function($stateProvider, $urlRouterProvider) {
   //
   // For any unmatched url, redirect to /state1
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("home");
   //
   // Now set up the states
   $stateProvider
+      .state('home', {
+          url: "/home",
+          templateUrl: 'pages/home.html',
+          controller  : 'homeController'
+        })
+  
     .state('add', {
       url: "/add",
-      templateUrl: 'pages/add.html'/*,
-                controller  : 'addController'*/
+      templateUrl: 'pages/add.html',
+      controller  : 'addController'
     })
    
     .state('last', {
       url: "/last",
-      templateUrl:'pages/last.html'/*,
-                controller  : 'lastController'*/
+      templateUrl:'pages/last.html',
+      controller  : 'lastController'
     })
     .state('hist', {
       url: "/list",
       templateUrl: 'pages/hist.html',
-                controller  : 'histController'
+      controller  : 'histController'
       }
     )   ;
+        
+   
 });
+
+
 
 app.controller("BarCtrl", function ($scope) {
   $scope.labels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];

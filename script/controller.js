@@ -56,3 +56,9 @@ app.controller("PieCtrl", function ($scope) {
   $scope.labels = ['YouTube', 'Facebook','Twitter'];
   $scope.data = [65, 59, 80];
 });
+
+app.controller('TranslateController', function($translate, $scope) {
+  $scope.changeLanguage = function (langKey) {
+    $translate.use(langKey);
+  };
+});

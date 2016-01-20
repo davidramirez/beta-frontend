@@ -23,6 +23,8 @@
     "angular-bootstrap": "~1.0.3",
     "angular-route": "~1.4.8",
     "angular-chart.js": "~0.8.8",
-    "angular-ui-router": "ui-router#~0.2.15"
+    "angular-ui-router": "ui-router#~0.2.15",
+    "angular-translate": "~2.8.1",
+    "bootstrap-languages": "bootstrap-language#*"
   }
 }

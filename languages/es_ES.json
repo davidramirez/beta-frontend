@@ -1,0 +1,19 @@
+{
+    "TITLE": "Hallo",
+    "FOO": "Dies ist ein Absatz",
+    "Navmenu.Welcome": "Bienvenido Usuario",
+    "Navmenu.Profile":"Mi Perfil",
+    "Navmenu.Settigns": "Configuración",
+    "Navmenu.Logout": "Cerrar sesión",
+    "ActionMenu.Hist.Title":"Historico",
+    "ActionMenu.Hist.Expla":"Visualiza el histórico con todas tus valoraciones",
+    "ActionMenu.Last.Title":"Ver Último",
+    "ActionMenu.Last.Expla":"Visualiza tu ultima valoración",
+    "ActionMenu.Add.Title":"Añadir",
+    "ActionMenu.Add.Expla":"Crea tu nuevo valoración",
+    "Page.Hist.Title":"Historico",
+    "Page.Hist.Table.Name":"Nombre",
+    "Page.Hist.Table.Lastame":"Apellido",
+    "Page.Add.Title":"Añadir",
+    "Page.Last.Title":"Ultimo"
+}

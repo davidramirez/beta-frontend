@@ -1,0 +1,19 @@
+{
+    "TITLE": "Hello",
+    "FOO": "Dies ist ein Absatz",
+    "Navmenu.Welcome": "Welcome User",
+    "Navmenu.Profile":"My Profile",
+    "Navmenu.Settigns": "Settings",
+    "Navmenu.Logout": "Logout",
+    "ActionMenu.Hist.Title":"Historical",
+    "ActionMenu.Hist.Expla":"View the historic with it's values",
+    "ActionMenu.Last.Title":"View Last",
+    "ActionMenu.Last.Expla":"View the latest values",
+    "ActionMenu.Add.Title":"Add",
+    "ActionMenu.Add.Expla":"Create a new valoration",
+    "Page.Hist.Title":"Historic",
+    "Page.Hist.Table.Name":"Name",
+    "Page.Hist.Table.Lastame":"Surname",
+    "Page.Add.Title":"Add",
+    "Page.Last.Title":"Last"
+}

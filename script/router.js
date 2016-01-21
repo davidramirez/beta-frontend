@@ -7,24 +7,24 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
       .state('home', {
           url: "/home",
-          templateUrl: 'pages/home.html',
+          templateUrl: 'partials/home.html',
           controller  : 'homeController'
         })
   
     .state('add', {
       url: "/add",
-      templateUrl: 'pages/add.html',
+      templateUrl: 'partials/add.html',
       controller  : 'addController'
     })
    
     .state('last', {
       url: "/last",
-      templateUrl:'pages/last.html',
+      templateUrl:'partials/last.html',
       controller  : 'lastController'
     })
     .state('hist', {
       url: "/list",
-      templateUrl: 'pages/hist.html',
+      templateUrl: 'partials/hist.html',
       controller  : 'histController'
       }
     )   ;
